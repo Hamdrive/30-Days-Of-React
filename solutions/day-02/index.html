@@ -1,0 +1,113 @@
+<!-- Use this format only for demo, ideally should import react and react dom in separate app.js -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0ae1aebe6f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      html, body{
+        font-family: 'Montserrat', sans-serif;
+        height: 100%;
+      }
+
+      
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: inline-flex;
+      }
+
+      li{
+        padding: 0 50px;
+      }
+
+      footer{
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+      }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+    
+        const Header = () => {
+            return (
+                <div style={{backgroundColor: '#6d9f71', 'text-align': 'center'}}>
+                    <p>&nbsp;</p>
+                    <h1>Hello World!</h1>
+                    <h2>This is your captain speaking!</h2>
+                    <h3>Join me as I work my way around React</h3>
+                    <p>Hamza Husein</p>
+                    <p>&nbsp;</p>
+                </div>
+            )
+        }
+
+        const Mains = () => {
+            return (
+                <main style={{backgroundColor: '#337357', 'text-align': 'center' }}>
+                    <p>&nbsp;</p>
+                    <h2>My journey will take me through the various stops along the Web Development Path</h2>
+                    <br/>
+                    <ul>
+                        <li><i class="fab fa-html5 fa-10x" style={{'color':'white'}}></i></li>
+                        <li><i class="fab fa-css3-alt fa-10x"></i></li>
+                        <li><i class="fab fa-js-square fa-10x"></i></li>
+                        <li><i class="fab fa-sass fa-10x"></i></li>
+                        <li><i class="fab fa-react fa-10x"></i></li>
+                    </ul>
+                    <br/>
+                    <h3 style={{ 'text-align': 'center' }}>Come, join me!</h3>
+                    <p>&nbsp;</p>
+                </main>
+            )
+        }
+
+        const Footer = () => {
+            return (
+                <footer style={{backgroundColor: '#2e2d4d', color: '#fff'}}>
+                    <p>&nbsp;</p>
+                    <p style={{ 'text-align': 'center' }}><b>© Copyright 2021</b></p>
+                    <p>&nbsp;</p>
+                        
+                </footer>
+            )
+        }
+
+        const App = () => {
+            return (
+                <div style={{backgroundColor: '#e4e3d3'}}>
+                    <Header />
+                    <Mains />
+                    <Footer />
+                </div>
+            )
+        }
+
+        ReactDOM.render(<App />, document.getElementById('root'));
+
+    </script>
+    
+</body>
+
+</html>
