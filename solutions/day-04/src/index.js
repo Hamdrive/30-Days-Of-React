@@ -15,24 +15,25 @@ import { IconContext } from 'react-icons/lib';
 
 const rootElement = document.getElementById("root");
 
-const header = () => {
+const header = (
   <div className="header">
-      <p>&nbsp;</p>
-      <h1>Hello World!</h1>
-      <h2>This is your captain speaking!</h2>
-      <br/>
-      <h3>Join me as I work my way around all the nitty-gritty that is Web Development!</h3>
-      <p>~Hamza Husein</p>
-      <p>&nbsp;</p>
-    </div>
-}
+    <p>&nbsp;</p>
+    <h1>Hello World!</h1>
+    <h2>This is your captain speaking!</h2>
+    <br />
+    <h3>
+      Join me as I work my way around all the nitty-gritty that is Web
+      Development!
+    </h3>
+    <p>~Hamza Husein</p>
+    <p>&nbsp;</p>
+  </div>
+);
 
 const Header = () => header;
 
-
-const Mains = () => {
-  return (
-    <div className="main">
+const mains = (
+      <div className="main">
       <p>&nbsp;</p>
       <h2 className="mainTitle">
         My journey will take me through the various stops along the Web
@@ -95,20 +96,22 @@ const Mains = () => {
       <h3 className="mainEnd">Come, join me!</h3>
       <p>&nbsp;</p>
     </div>
-  );
-};
+)
 
-const Footer = () => {
-  return (
-    <div className="footer">
-      <p>&nbsp;</p>
-      <p>
-        <b>© Copyright 2021</b>
-      </p>
-      <p>&nbsp;</p>
-    </div>
-  );
-};
+
+const Mains = () => mains;
+
+const footer =(
+  <div className="footer">
+    <p>&nbsp;</p>
+    <p>
+      <b>© Copyright 2021</b>
+    </p>
+    <p>&nbsp;</p>
+  </div>
+)
+
+const Footer = () => footer;
 
 const App = () =>{
   return (
