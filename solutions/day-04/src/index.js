@@ -15,19 +15,19 @@ import { IconContext } from 'react-icons/lib';
 
 const rootElement = document.getElementById("root");
 
-const Header = () =>{
-  return(
-    <div className="header">
-    <p>&nbsp;</p>
-    <h1>Hello World!</h1>
-    <h2>This is your captain speaking!</h2>
-    <br/>
-    <h3>Join me as I work my way around all the nitty-gritty that is Web Development!</h3>
-    <p>~Hamza Husein</p>
-    <p>&nbsp;</p>
-  </div>
-  )
+const header = () => {
+  <div className="header">
+      <p>&nbsp;</p>
+      <h1>Hello World!</h1>
+      <h2>This is your captain speaking!</h2>
+      <br/>
+      <h3>Join me as I work my way around all the nitty-gritty that is Web Development!</h3>
+      <p>~Hamza Husein</p>
+      <p>&nbsp;</p>
+    </div>
 }
+
+const Header = () => header;
 
 
 const Mains = () => {
